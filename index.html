@@ -415,8 +415,8 @@ function buildLegend(){
   });
 }
 
-const PX_PER_MIN = 4.4;
-const ROW_H = 92;
+const PX_PER_MIN = 2.6;
+const ROW_H = 112;
 const HEADER_H = 34;
 const LABEL_W = 118;
 
@@ -493,7 +493,7 @@ function renderBoard(){
     if(endMin < startMin) endMin += 1440;
 
     const x = LABEL_W + (startMin-day.dayStart)*PX_PER_MIN;
-    const w = Math.max((endMin-startMin)*PX_PER_MIN - 4, 92);
+    const w = Math.max((endMin-startMin)*PX_PER_MIN - 4, 58);
     const y = HEADER_H + vi*ROW_H + 6;
     const h = ROW_H - 12;
 
